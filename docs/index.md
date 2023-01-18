@@ -1,6 +1,6 @@
 # Home page
 
-hi, welcome to my mkdocs site. my git profile is [gitsugatensho](https://github.com/gitsugatensho)
+hi, welcome to my MkDocs site. my git profile is [gitsugatensho](https://github.com/gitsugatensho?tab=repositories)
 
 ## Some of my work
 
