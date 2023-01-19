@@ -14,7 +14,7 @@
         - ![Inbound Rules](/images/InboundRulesP4.png)
         *Inbound rules - port 80 is where the docker image will be hosted, port 443 to allow traffic via HTTPs, and port 20 allows for me to connect to the linux image via SSH*
         - ![Outbound Rules](/images/OutboundRulesP4.png)
-        *Outbound rules - there is no restriction on which ports and IPs can connect to this instance*
+        *Outbound rules - there is no restriction on which ports and IPs traffic can leave out to*
     - I used the command <code>ssh -i "project4key.pem" ec2-user@ec2-13-40-235-185.eu-west-2.compute.amazonaws.com</code> to connect to the linux image via SSH. 
 - The next step was to install dependencies.
     - I used sudo su to access root user privileges and installed git and docker.
