@@ -20,7 +20,7 @@
     - I used sudo su to access root user privileges and installed git and docker.
     - I pulled my repo [gifsite]("github.com/gitsugatensho/gifsite). This repo contains a Dockerfile, and a flask app that displays a random gif upon visiting the site. 
     ![Gifsite](/images/GifSite.png)
-    *The gif site! (ignore that it says 'cat fif' and shows a gif of Timmy the sheep*
+    *The gif site! (ignore that it says 'cat fif' and shows a gif of a sheep*
     - I built the docker image within my repo and ran it. The docker app was being hosted on port 80.
 
 
