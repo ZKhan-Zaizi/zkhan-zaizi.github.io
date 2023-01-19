@@ -1,11 +1,11 @@
 # Section 2: Part 1: (AWS EC2)
 
-## Previously
+### Previously
 - Created AWS account
 - Setup 2FA
 - Setup IAM roles
 - Followed an introductory course and was briefly informed about all of the AWS technologies.
-## Project 4
+### Project 4
 ##### Hosting a Docker app on an EC2 instance on AWS. 
 - The first step was to create an EC2 instance and connect to it via SSH. 
     - Used Amazon Linux 2 as the image and used the free tier AMI t2.nano.
@@ -18,7 +18,7 @@
     - I used the command <code>ssh -i "project4key.pem" ec2-user@ec2-13-40-235-185.eu-west-2.compute.amazonaws.com</code> to connect to the linux image via SSH. 
 - The next step was to install dependencies.
     - I used sudo su to access root user privileges and installed git and docker.
-    - I pulled my repo [gifsite]("github.com/gitsugatensho/gifsite). This repo contains a Dockerfile, and a flask app that displays a random gif upon visiting the site. 
+    - I pulled my repo [gifsite]("www.github.com/gitsugatensho/gifsite). This repo contains a Dockerfile, and a flask app that displays a random gif upon visiting the site. 
     ![Gifsite](/images/GifSite.png)
     *The gif site! (ignore that it says 'cat fif' and shows a gif of Timmy the sheep*
     - I built the docker image within my repo and ran it. The docker app was being hosted on port 80.
