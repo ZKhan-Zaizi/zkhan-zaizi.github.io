@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" >
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><link rel="canonical" href="http://localhost:8000/section2/AWS%20wip/" />
+      <link rel="shortcut icon" href="../../img/favicon.ico" />
+    <title>Section 2: Part 1: (AWS EC2) - iio's Docs</title>
+    <link rel="stylesheet" href="../../css/theme.css" />
+    <link rel="stylesheet" href="../../css/theme_extra.css" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.5.0/styles/github.min.css" />
+    
+      <script>
+        // Current page data
+        var mkdocs_page_name = "Section 2: Part 1: (AWS EC2)";
+        var mkdocs_page_input_path = "section2/AWS wip.md";
+        var mkdocs_page_url = "/section2/AWS%20wip/";
+      </script>
+    
+    <script src="../../js/jquery-3.6.0.min.js" defer></script>
+    <!--[if lt IE 9]>
+      <script src="../../js/html5shiv.min.js"></script>
+    <![endif]-->
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.5.0/highlight.min.js"></script>
+      <script>hljs.initHighlightingOnLoad();</script> 
+</head>
+
+<body class="wy-body-for-nav" role="document">
+
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side stickynav">
+    <div class="wy-side-scroll">
+      <div class="wy-side-nav-search">
+          <a href="../.." class="icon icon-home"> iio's Docs
+        </a><div role="search">
+  <form id ="rtd-search-form" class="wy-form" action="../../search.html" method="get">
+      <input type="text" name="q" placeholder="Search docs" title="Type search term here" />
+  </form>
+</div>
+      </div>
+
+      <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="../..">Home</a>
+                </li>
+              </ul>
+              <p class="caption"><span class="caption-text">Projects</span></p>
+              <ul>
+                  <li class="toctree-l1"><a class="reference internal" href="#">Git</a>
+    <ul>
+                <li class="toctree-l2"><a class="reference internal" href="../../section1/git/git-page/">Github</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../section1/git/music-player/">music player</a>
+                </li>
+    </ul>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="#">Docker</a>
+    <ul>
+                <li class="toctree-l2"><a class="reference internal" href="../../section1/docker/docker-page/">Learning Docker</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../section1/docker/mkdocs-page/">Mkdocs</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../section1/docker/hadolint-page/">Hadolint</a>
+                </li>
+    </ul>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="#">AWS</a>
+    <ul>
+                <li class="toctree-l2"><a class="reference internal" href="../AWS/">Project 4</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../AWS2/">Project 5</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../AWS3/">Project 6</a>
+                </li>
+    </ul>
+                  </li>
+              </ul>
+              <p class="caption"><span class="caption-text">Research</span></p>
+              <ul>
+                  <li class="toctree-l1"><a class="reference internal" href="../../section1/utm/utm-page/">UTM</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../section1/linux/linux-page/">Linux</a>
+                  </li>
+              </ul>
+              <p class="caption"><span class="caption-text">Misc</span></p>
+              <ul>
+                  <li class="toctree-l1"><a class="reference internal" href="../../about/">about</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../license/">licence</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../oldindex/">oldindex</a>
+                  </li>
+              </ul>
+      </div>
+    </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+      <nav class="wy-nav-top" role="navigation" aria-label="Mobile navigation menu">
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../..">iio's Docs</a>
+        
+      </nav>
+      <div class="wy-nav-content">
+        <div class="rst-content"><div role="navigation" aria-label="breadcrumbs navigation">
+  <ul class="wy-breadcrumbs">
+    <li><a href="../.." class="icon icon-home" alt="Docs"></a> &raquo;</li>
+      <li>Section 2: Part 1: (AWS EC2)</li>
+    <li class="wy-breadcrumbs-aside">
+    </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+            <div class="section" itemprop="articleBody">
+              
+                <h1 id="section-2-part-1-aws-ec2">Section 2: Part 1: (AWS EC2)</h1>
+<h3 id="previously">Previously</h3>
+<ul>
+<li>Created AWS account</li>
+<li>Setup 2FA</li>
+<li>Setup IAM roles</li>
+<li>Followed an introductory course and was briefly informed about all of the AWS technologies.</li>
+</ul>
+<h3 id="project-4">Project 4</h3>
+<h5 id="hosting-a-docker-app-on-an-ec2-instance-on-aws">Hosting a Docker app on an EC2 instance on AWS.</h5>
+<ul>
+<li>The first step was to create an EC2 instance and connect to it via SSH. <ul>
+<li>Used Amazon Linux 2 as the image and used the free tier AMI t2.nano.</li>
+<li>I generated a key pair called "project4key" and downlaoded the relevant .pem onto my local device.</li>
+<li>Created a security group and set inbound and outbound traffic rules. <ul>
+<li><img alt="Inbound Rules" src="/images/InboundRulesP4.png" />
+<em>Inbound rules - port 80 is where the docker image will be hosted, port 443 to allow traffic via HTTPs, and port 20 allows for me to connect to the linux image via SSH</em></li>
+<li><img alt="Outbound Rules" src="/images/OutboundRulesP4.png" />
+<em>Outbound rules - there is no resriction on which ports and IPs can connect to this instance</em></li>
+</ul>
+</li>
+<li>I used the command <code>ssh -i "project4key.pem" ec2-user@ec2-13-40-235-185.eu-west-2.compute.amazonaws.com</code> to connect to the linux image via SSH. </li>
+</ul>
+</li>
+<li>The next step was to install dependencies.<ul>
+<li>I used sudo su to access root user privileges and installed git and docker.</li>
+<li>I pulled my repo <a href="&quot;www.github.com/gitsugatensho/gifsite">gifsite</a>. This repo contains a Dockerfile, and a flask app that displays a random gif upon visiting the site. 
+<img alt="Gifsite" src="/images/GifSite.png" />
+<em>The gif site! (ignore that it says 'cat fif' and shows a gif of Timmy the sheep</em></li>
+<li>I built the docker image within my repo and ran it. The docker app was being hosted on port 80.</li>
+</ul>
+</li>
+</ul>
+<h5 id="launch-templates-and-auto-scaling-groups">Launch Templates and Auto Scaling Groups</h5>
+<ul>
+<li>Create a launch template <ul>
+<li>Having trouble with this</li>
+<li>Didn’t do it correctly.</li>
+</ul>
+</li>
+<li>Create auto scaling group <ul>
+<li>What’s a use case for this in a work project?</li>
+<li>How can I schedule stop/start with time of the day?</li>
+</ul>
+</li>
+<li>Understand horizontal and vertical scaling <ul>
+<li>Understood.</li>
+</ul>
+</li>
+</ul>
+<h2 id="relevant-links">Relevant links</h2>
+<p><a href="/index">Home</a> | <a href="/about">About</a> | <a href="/license">License</a> | <a href="/section1">Docs</a></p>
+              
+            </div>
+          </div><footer>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <!-- Copyright etc -->
+  </div>
+
+  Built with <a href="https://www.mkdocs.org/">MkDocs</a> using a <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>.
+</footer>
+          
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+
+  <div class="rst-versions" role="note" aria-label="Versions">
+  <span class="rst-current-version" data-toggle="rst-current-version">
+    
+    
+    
+  </span>
+</div>
+    <script>var base_url = '../..';</script>
+    <script src="../../js/theme_extra.js" defer></script>
+    <script src="../../js/theme.js" defer></script>
+      <script src="../../search/main.js" defer></script>
+    <script defer>
+        window.onload = function () {
+            SphinxRtdTheme.Navigation.enable(true);
+        };
+    </script>
+
+</body>
+</html>

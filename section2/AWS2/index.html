@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" >
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><link rel="canonical" href="http://localhost:8000/section2/AWS2/" />
+      <link rel="shortcut icon" href="../../img/favicon.ico" />
+    <title>Project 5 - iio's Docs</title>
+    <link rel="stylesheet" href="../../css/theme.css" />
+    <link rel="stylesheet" href="../../css/theme_extra.css" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.5.0/styles/github.min.css" />
+    
+      <script>
+        // Current page data
+        var mkdocs_page_name = "Project 5";
+        var mkdocs_page_input_path = "section2/AWS2.md";
+        var mkdocs_page_url = "/section2/AWS2/";
+      </script>
+    
+    <script src="../../js/jquery-3.6.0.min.js" defer></script>
+    <!--[if lt IE 9]>
+      <script src="../../js/html5shiv.min.js"></script>
+    <![endif]-->
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.5.0/highlight.min.js"></script>
+      <script>hljs.initHighlightingOnLoad();</script> 
+</head>
+
+<body class="wy-body-for-nav" role="document">
+
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side stickynav">
+    <div class="wy-side-scroll">
+      <div class="wy-side-nav-search">
+          <a href="../.." class="icon icon-home"> iio's Docs
+        </a><div role="search">
+  <form id ="rtd-search-form" class="wy-form" action="../../search.html" method="get">
+      <input type="text" name="q" placeholder="Search docs" title="Type search term here" />
+  </form>
+</div>
+      </div>
+
+      <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="../..">Home</a>
+                </li>
+              </ul>
+              <p class="caption"><span class="caption-text">Projects</span></p>
+              <ul class="current">
+                  <li class="toctree-l1"><a class="reference internal" href="#">Git</a>
+    <ul>
+                <li class="toctree-l2"><a class="reference internal" href="../../section1/git/git-page/">Github</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../section1/git/music-player/">music player</a>
+                </li>
+    </ul>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="#">Docker</a>
+    <ul>
+                <li class="toctree-l2"><a class="reference internal" href="../../section1/docker/docker-page/">Learning Docker</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../section1/docker/mkdocs-page/">Mkdocs</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../section1/docker/hadolint-page/">Hadolint</a>
+                </li>
+    </ul>
+                  </li>
+                  <li class="toctree-l1 current"><a class="reference internal current" href="#">AWS</a>
+    <ul class="current">
+                <li class="toctree-l2"><a class="reference internal" href="../AWS/">Project 4</a>
+                </li>
+                <li class="toctree-l2 current"><a class="reference internal current" href="./">Project 5</a>
+    <ul class="current">
+    </ul>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../AWS3/">Project 6</a>
+                </li>
+    </ul>
+                  </li>
+              </ul>
+              <p class="caption"><span class="caption-text">Research</span></p>
+              <ul>
+                  <li class="toctree-l1"><a class="reference internal" href="../../section1/utm/utm-page/">UTM</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../section1/linux/linux-page/">Linux</a>
+                  </li>
+              </ul>
+              <p class="caption"><span class="caption-text">Misc</span></p>
+              <ul>
+                  <li class="toctree-l1"><a class="reference internal" href="../../about/">about</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../license/">licence</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../oldindex/">oldindex</a>
+                  </li>
+              </ul>
+      </div>
+    </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+      <nav class="wy-nav-top" role="navigation" aria-label="Mobile navigation menu">
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../..">iio's Docs</a>
+        
+      </nav>
+      <div class="wy-nav-content">
+        <div class="rst-content"><div role="navigation" aria-label="breadcrumbs navigation">
+  <ul class="wy-breadcrumbs">
+    <li><a href="../.." class="icon icon-home" alt="Docs"></a> &raquo;</li>
+          <li>Projects &raquo;</li>
+          <li>AWS &raquo;</li>
+      <li>Project 5</li>
+    <li class="wy-breadcrumbs-aside">
+    </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+            <div class="section" itemprop="articleBody">
+              
+                <p># Section 2: Part 2: [AWS] Wordpress on ECS </p>
+<h2 id="objectives">Objectives</h2>
+<p>Project 6 required me to:
+- Set up Wordpress in EC2 
+- Have an RDS database connected to wordpress
+- Push the Wordpress container to ECR</p>
+<h2 id="getting-started">Getting Started</h2>
+<p>Project 5 took 1 day, but Project 6 took 2 weeks.</p>
+<h3 id="ec2">EC2</h3>
+<p>Developed tbe wordpress container until it was working on a single EC2 instance.
+  - Install docker and git on an EC2 instance
+  - yum install docker
+  - yum install git<br />
+  - Clone my wordpress repo from Github
+  - git clone my <a href="https://github.com/gitsugatensho/WPonAWS.git">Wordpress on AWS repo</a> 
+  - edit credentials in docker-compose.yml file.
+  - run docker-compose up -d
+  - Edit the docker-compose.yml file until it was fully working</p>
+<h3 id="rds">RDS</h3>
+<ul>
+<li>Set up an RDS database and linked it to the single EC2 instance to check if it was working.</li>
+</ul>
+<h3 id="elb-options">ELB options</h3>
+<p>Elb was in a previous version of project 6 but was ommitted in a new version as it was not in the requirements for project 6. </p>
+<h3 id="efs-issue">EFS issue</h3>
+<p>EFS integration was not successful in the earlier version and since it was not in the requirements either, it was omitted. </p>
+<h3 id="port-and-environmental-variable-issues">Port and Environmental Variable issues</h3>
+<p>Port values and Environmental values were not set correctly on multiple occasions, so extra care was taken to ensure that the right values were being enterred in data fields across the AWS interface.</p>
+<h3 id="pushing-the-container-to-ecr">Pushing the container to ECR</h3>
+<ul>
+<li>Set AWS credentials</li>
+<li>Login to AWS
+  <code>console
+  aws ecr get-login-password --region eu-west-2 | docker login --username AWS --password-stdin ************.dkr.ecr.eu-west-2.amazonaws.com</code></li>
+<li>Push image to ECR repository
+  ```bat</li>
+<li>docker tag wordpressimage:latest <strong><em>*</em></strong><strong>*</strong>.dkr.ecr.eu-west-2.amazonaws.com/wordpressblog:latest
+  <code></code>console</li>
+<li>docker push <strong><em>*</em></strong><strong>*</strong>.dkr.ecr.eu-west-2.amazonaws.com/wordpressblog:latest
+  ```</li>
+</ul>
+<h3 id="next">next</h3>
+<ul>
+<li>Created a task definition that used the image from ECR repository wordpressblog </li>
+<li>The ports were mapped to port 80.
+Environmental variables were set:
+Wordpress_config_extra is for any extra constants
+DB host points to the RDS database
+And the rest are the credentials for the wordpress database.</li>
+</ul>
+<h3 id="points-of-failure">Points of failure:</h3>
+<p>EFS mounting issue
+Container port not specified
+Wrong container port 
+No environmental variables specified
+Wrong environmental variables
+RDS password different to what it was supposed to be
+Security groups with missing rules</p>
+<p>## Relevant links</p>
+<p><a href="/index">Home</a> | <a href="/about">About</a> | <a href="/license">License</a> | <a href="/section1">Docs</a></p>
+              
+            </div>
+          </div><footer>
+    <div class="rst-footer-buttons" role="navigation" aria-label="Footer Navigation">
+        <a href="../AWS/" class="btn btn-neutral float-left" title="Project 4"><span class="icon icon-circle-arrow-left"></span> Previous</a>
+        <a href="../AWS3/" class="btn btn-neutral float-right" title="Project 6">Next <span class="icon icon-circle-arrow-right"></span></a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <!-- Copyright etc -->
+  </div>
+
+  Built with <a href="https://www.mkdocs.org/">MkDocs</a> using a <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>.
+</footer>
+          
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+
+  <div class="rst-versions" role="note" aria-label="Versions">
+  <span class="rst-current-version" data-toggle="rst-current-version">
+    
+    
+      <span><a href="../AWS/" style="color: #fcfcfc">&laquo; Previous</a></span>
+    
+    
+      <span><a href="../AWS3/" style="color: #fcfcfc">Next &raquo;</a></span>
+    
+  </span>
+</div>
+    <script>var base_url = '../..';</script>
+    <script src="../../js/theme_extra.js" defer></script>
+    <script src="../../js/theme.js" defer></script>
+      <script src="../../search/main.js" defer></script>
+    <script defer>
+        window.onload = function () {
+            SphinxRtdTheme.Navigation.enable(true);
+        };
+    </script>
+
+</body>
+</html>
